@@ -1,0 +1,1 @@
+# gql-swapi-demo
