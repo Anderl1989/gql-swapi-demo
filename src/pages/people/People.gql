@@ -1,0 +1,25 @@
+query Peoples($after: String) {
+  allPeople(first: 10, after: $after) {
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+    edges {
+      node {
+        name
+        id
+      }
+    }
+  }
+}
+
+query Person($personId: ID) {
+  person(id: $personId) {
+    name
+    height
+    hairColor
+    gender
+    eyeColor
+    birthYear
+  }
+}
