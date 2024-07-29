@@ -26,8 +26,6 @@ function People() {
 
   const person = personData?.person;
 
-  console.log('data', person);
-
   return (
     <Flex className={styles.container}>
       <Flex vertical gap="small" className={styles.listContainer}>
